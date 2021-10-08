@@ -18,9 +18,9 @@ export default function Home() {
 				<Button onClick={handleChange} variant="primary">Add New Game</Button>
 			</Row>
 			<Row className="pt-4" >
-				{data.map((value) => {
+				{data.map((value, index) => {
 					return (
-						<Col lg={4} xs={12} md={8} >
+						<Col key={index} lg={4} xs={12} md={8} >
 							<Board />
 						</Col>
 					)
