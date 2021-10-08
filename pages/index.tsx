@@ -19,11 +19,10 @@ export default function Home() {
 			</Row>
 			<Row className="pt-4" >
 				{data.map(value => {
-					return (
-						<Col lg={4} xs={12} md={8}>
-							<Board />
-						</Col>
-					)
+					<Col lg={4} xs={12} md={8}>
+						<Board />
+					</Col>
+
 				})}
 			</Row>
 		</Container>
