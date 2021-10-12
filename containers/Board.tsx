@@ -39,7 +39,7 @@ function Board() {
 	const [winner, setWinner] = useState<Player>(null);
 
 	function reset() {
-		setSquares(Array(9).fill(null));
+		setSquares(Array(36).fill(null));
 		setWinner(null);
 		setCurrentPlayer(Math.round(Math.random() * 1) === 1 ? "X" : "O");
 
