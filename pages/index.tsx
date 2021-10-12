@@ -20,7 +20,7 @@ export default function Home() {
 			<Row className="pt-4" >
 				{data.map((value, index) => {
 					return (
-						<Col key={index} lg={3} xs={12} md={6} sm={6}>
+						<Col key={index} lg={6} md={6} sm={12} xs={12} >
 							<Board />
 						</Col>
 					)
